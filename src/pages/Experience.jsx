@@ -98,7 +98,7 @@ export const Experience = () => {
                             <div className={ experienceText }>
                                 <p className={ experienceTextParagraph }>
                                     <span>{">"}</span>
-                                    Inmunes RP fue mi servidor de FiveM, el cual tuvo un promedio diario de más de 150 jugadores en simultáneo.
+                                    Inmunes RP fue mi servidor de FiveM, el cual tuvo un promedio diario de más de 200 jugadores en simultáneo.
                                 </p>
                                 <p className={ experienceTextParagraph }>
                                     <span>{">"}</span>
