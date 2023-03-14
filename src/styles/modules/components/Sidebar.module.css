@@ -1,0 +1,101 @@
+.container {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    filter: saturate(0.4);
+    transition: 1s filter, .7s transform;
+}
+
+.image:hover {
+    filter: saturate(1);
+    transform: rotate(360deg);
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.navItem {
+    font-size: 1.75em;
+    display: flex;
+    gap: .3rem;
+    transition: transform .3s;
+}
+
+.navItemAnchor {
+    color: var(--green);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.navItem:hover {
+    transform: scale(1.1);
+}
+
+.navItemSelected {
+    transform: scale(1.1);
+}
+
+.navItemSelected > .navItemBrackets {
+    display: inline;
+}
+
+.navItemSelected > .navItemAnchor {
+    color: var(--light)
+}
+
+.navItem:hover > .navItemBrackets {
+    display: inline;
+}
+
+.navItem:hover > .navItemAnchor {
+    color: var(--light)
+}
+
+.navItemBrackets {
+    display: none;
+    color: var(--green);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.networks {
+    display: flex;
+    gap: .5rem
+}
+
+.network {
+    transition: transform .3s, color .3s;
+}
+
+.network:hover {
+    stroke: var(--green);
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.text {
+    text-align: center;
+    color: var(--dark-light);
+}
+
+.anchor {
+    color: var(--green);
+}

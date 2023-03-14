@@ -1,0 +1,6 @@
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: var(--ultra-dark);
+    background-image: url('../../../background.svg');
+}

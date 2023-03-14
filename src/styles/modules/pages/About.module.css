@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2rem;
+}
+
+.titleContainer {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.title {
+    font-size: 2em;
+    color: var(--light)
+}
+
+.bar {
+    flex: 1;
+    height: 2px;
+    background-color: var(--green);
+}
+
+.paragraph {
+    color: var(--dark-light);
+    line-height: 1.3;
+    font-size: 1.25em;
+}
+
+.technologies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.techonologie {
+    color: var(--darker-light);
+    display: flex;
+    gap: .5rem;
+
+}
+
+.techonologie > span {
+    color: var(--green);
+}
