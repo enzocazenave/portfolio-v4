@@ -28,7 +28,7 @@ export const Home = () => {
                 </div>
 
                 <p className={ fourthLine }>Soy un desarrollador <span className={ greenText }>Full Stack</span> especializado en crear (y ocasionalmente diseñar) experiencias digitales excepcionales.</p>
-                <a href="#" className={ checkResume }>Echá un vistazo a mi CV</a>
+                <a target="_blank" href="https://cdn.discordapp.com/attachments/1085311163446861884/1085311225807777832/cv-enzocazenave.pdf" className={ checkResume }>Echá un vistazo a mi CV</a>
             </div>
         </section>
     )
