@@ -24,6 +24,11 @@
     color: var(--light)
 }
 
+.title > span {
+    font-size: .6em;
+    color: var(--green)
+}
+
 .bar {
     flex: 1;
     height: 2px;
@@ -109,6 +114,11 @@
     100% {
         opacity: 1;
         transform: translateY(0px);
+    }
+}
 
+@media (max-width: 775px) {
+    .mainContainer {
+        width: 95%;
     }
 }

@@ -41,6 +41,12 @@
     transition: color .3s;
 }
 
+.navItemAnchor > span {
+    display: none;
+    font-size: .6em;
+    color: var(--green)
+}
+
 .navItem:hover {
     transform: scale(1.1);
 }
@@ -55,6 +61,10 @@
 
 .navItemSelected > .navItemAnchor {
     color: var(--light)
+}
+
+.navItemSelected > .navItemAnchor > span {
+    display: inline;
 }
 
 .navItem:hover > .navItemBrackets {
@@ -98,4 +108,40 @@
 
 .anchor {
     color: var(--green);
+}
+
+@media (max-width: 975px) {
+    .container {
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: .5rem;
+        gap: .5rem;
+        background-color: var(--dark);
+        z-index: 4;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .nav {
+        flex-direction: row;
+    }
+
+    .navItem {
+        font-size: .9em;
+    }
+
+    .network {
+        width: 1.5625rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        display: none;
+    }
 }

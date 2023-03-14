@@ -14,7 +14,7 @@ export const About = () => {
         <section className={ container } id="about">
             <div className={ mainContainer }>
                 <div className={ titleContainer }>
-                    <h2 className={ title }>Sobre Mi</h2>
+                    <h2 className={ title }><span>01.</span> Sobre Mi</h2>
                     <div className={ bar }></div>
                 </div>
                 

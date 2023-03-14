@@ -54,3 +54,9 @@
 .checkResume:hover {
     background-color: var(--green-hover);
 }
+
+@media (max-width: 775px) {
+    .mainContainer {
+        width: 95%;
+    }
+}

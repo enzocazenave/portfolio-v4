@@ -36,27 +36,48 @@
     background-color: var(--green);
 }
 
-.paragraph {
-    color: var(--dark-light);
-    line-height: 1.3;
-    font-size: 1.25em;
-}
-
-.technologies {
+.degrees {
+    width: 100%;
+    height: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
 
-.techonologie {
-    color: var(--darker-light);
+.degree {
+    background-color: var(--dark);
     display: flex;
-    gap: .5rem;
-
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: .5rem;
 }
 
-.techonologie > span {
-    color: var(--green);
+.degreeTitle {
+    font-size: 1.1em;
+    color: var(--light);
+    line-height: 1.3;
+}
+
+.degreeIcon {
+    stroke: var(--green);
+}
+
+.degreeText {
+    color: var(--dark-light);
+    line-height: 1.3;
+    font-size: .9em;
+}
+
+.degreeText > span {
+    color: var(--green)
+}
+
+@media (max-width: 1100px) {
+    .degrees {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 775px) {

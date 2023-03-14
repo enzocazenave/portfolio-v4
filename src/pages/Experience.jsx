@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import {
     container,
     mainContainer,
@@ -11,7 +11,7 @@ import {
     experienceSidebarItemSelected,
     experienceContainer,
     experienceTitle,
-    experienceDate,
+    experienceDate, 
     experienceText,
     experienceTextParagraph
 } from '../styles/modules/pages/Experience.module.css'
@@ -24,7 +24,7 @@ export const Experience = () => {
         <section className={ container } id="experience">
             <div className={ mainContainer }>
                 <div className={ titleContainer }>
-                    <h2 className={ title }>Experiencia</h2>
+                    <h2 className={ title }><span>02.</span> Experiencia</h2>
                     <div className={ bar }></div>
                 </div>
 
@@ -76,7 +76,7 @@ export const Experience = () => {
                     {(experienceSelected == 'freelancing') && (
                         <div className={ experienceContainer }>
                             <h1 className={ experienceTitle }>Desarrollador <span>@Freelancing</span></h1>
-                            <span className={ experienceDate }>Ene 2021 - Dic 2021</span>
+                            <span className={ experienceDate }>Ene 2022 - Dic 2022</span>
                             
                             <div className={ experienceText }>
                                 <p className={ experienceTextParagraph }>
@@ -93,7 +93,7 @@ export const Experience = () => {
                     {(experienceSelected == 'inmunes') && (
                         <div className={ experienceContainer }>
                             <h1 className={ experienceTitle }>Desarrollador <span>@InmunesRP</span></h1>
-                            <span className={ experienceDate }>Ene 2020 - Dic 2020</span>
+                            <span className={ experienceDate }>Ene 2020 - Dic 2021</span>
 
                             <div className={ experienceText }>
                                 <p className={ experienceTextParagraph }>

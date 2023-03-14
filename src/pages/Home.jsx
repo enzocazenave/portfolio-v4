@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import {
     container,
     mainContainer,
@@ -8,8 +9,15 @@ import {
     greenText,
     checkResume
 } from '../styles/modules/pages/Home.module.css';
+import ScrollReveal from 'scrollreveal'
+
 
 export const Home = () => {
+
+    useEffect(() => {
+        ScrollReveal({ reset: false }).reveal('#home', { delay: 600, container: '#scrollContainer' })
+    }, []);
+
     return (
         <section className={ container } id="home">
             <div className={ mainContainer }>
