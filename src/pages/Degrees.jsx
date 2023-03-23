@@ -29,6 +29,11 @@ export const Degrees = () => {
                     </div>
                     <div className={ degree }>
                         <Certificate className={ degreeIcon } /> 
+                        <h2 className={ degreeTitle }>Diploma Superior de Capacitacitación en Ingles</h2>
+                        <p className={ degreeText }>Diploma obtenido en Brighton English Institute.</p>
+                    </div>
+                    <div className={ degree }>
+                        <Certificate className={ degreeIcon } /> 
                         <h2 className={ degreeTitle }>React: De cero a experto</h2>
                         <p className={ degreeText }>Finalicé un curso de React en la plataforma online de aprendizaje <span>Udemy</span>.</p>
                     </div>
