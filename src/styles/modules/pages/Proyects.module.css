@@ -171,6 +171,10 @@ position: relative;*/
 }
 
 @media (max-width: 775px) {
+    .container {
+        height: fit-content;
+        padding-bottom: 5rem;
+    }
     .mainContainer {
         width: 95%;
     }

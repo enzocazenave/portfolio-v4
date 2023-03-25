@@ -81,6 +81,9 @@
 }
 
 @media (max-width: 775px) {
+    .container {
+        height: fit-content;
+    }
     .mainContainer {
         width: 95%;
     }
