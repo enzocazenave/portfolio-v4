@@ -18,7 +18,7 @@ import {
 
 export const Experience = () => {
 
-    const [experienceSelected, setExperienceSelected] = useState('turnate');
+    const [experienceSelected, setExperienceSelected] = useState('upbrands');
 
     return (
         <section className={ container } id="experience">
@@ -31,10 +31,10 @@ export const Experience = () => {
                 <div className={ experience }>
                     <ul className={ experienceSidebar }>
                         <li 
-                            className={ `${ experienceSidebarItem } ${ (experienceSelected == 'turnate') && experienceSidebarItemSelected }` }
-                            onClick={ () => setExperienceSelected('turnate') }    
+                            className={ `${ experienceSidebarItem } ${ (experienceSelected == 'upbrands') && experienceSidebarItemSelected }` }
+                            onClick={ () => setExperienceSelected('upbrands') }    
                         >
-                            Turnate    
+                            Upbrands Agency
                         </li>      
                         <li 
                             className={ `${ experienceSidebarItem } ${ (experienceSelected == 'freelancing') && experienceSidebarItemSelected }` }
@@ -50,25 +50,23 @@ export const Experience = () => {
                         </li>        
                     </ul>
 
-                    {(experienceSelected == 'turnate') && (
+                    {(experienceSelected == 'upbrands') && (
                         <div className={ experienceContainer }>
-                            <h1 className={ experienceTitle }>Desarrollador <span>@Turnate</span></h1>
-                            <span className={ experienceDate }>Ene 2023 - Actualidad</span>
+                            <h1 className={ experienceTitle }>Desarrollador <a href="https://upbrands.agency/" target="_blank">@Upbrands Agency</a></h1>
+                            <span className={ experienceDate }>Abr 2023 - Actualidad</span>
 
                             <div className={ experienceText }>
                                 <p className={ experienceTextParagraph }>
                                     <span>{">"}</span>
-                                    Turnate busca ayudar a los comercios que funcionan con turnos, mediante
-                                    un conjunto de productos tecnológicos. (Sitio web, Panel administrativo, Aplicación de dispositivos móviles)
+                                    Desarrollo de Web para una agencia de viajes del exterior.
                                 </p>
                                 <p className={ experienceTextParagraph }>
                                     <span>{">"}</span>
-                                    Es mi propio proyecto y actualmente se encuentra en desarrollo.
+                                    Desarrollo de frontend de un sistemas de gestión o panel administrativo para una empresa nacional.
                                 </p>
                                 <p className={ experienceTextParagraph }>
                                     <span>{">"}</span>
-                                    Utilizo una amplia variedad de tecnologías y herramientas para llevar a cabo el desarrollo de mi proyecto
-                                    digital. (React, Electron, JavaScript, Mongo DB, Node JS, Express, Socket IO, React Native)
+                                    Desarrollo de frontend de un sistemas de gestión o panel administrativo para una empresa multinacional.
                                 </p>
                             </div>
                         </div>

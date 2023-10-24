@@ -83,6 +83,11 @@
     color: var(--green)
 }
 
+.experienceTitle > a {
+    color: var(--green);
+    text-decoration: none;
+}
+
 .experienceDate {
     color: var(--darker-light);
 }
